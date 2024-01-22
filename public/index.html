@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Habit Tracking App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Habit Tracking App</h1>
+
+        <form id="habitForm">
+            <label for="habitName">Habit Name:</label>
+            <input type="text" id="habitName" required>
+
+            <label for="stoppedDate">Stopped Date:</label>
+            <input type="date" id="stoppedDate" required>
+
+            <button type="submit">Add Habit</button>
+        </form>
+
+        <div id="habitsList"></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
