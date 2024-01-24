@@ -54,12 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const stoppedDate = new Date(habit.stoppedDate);
         const currentDate = new Date();
         const daysPassed = Math.floor((currentDate - stoppedDate) / (1000 * 60 * 60 * 24));
-
+        const daysLabel = daysPassed === 1 ? 'day' : 'days';
+        
         // Create HTML content
         habitElement.innerHTML = `
             <p><strong>Name:</strong> ${habit.name}</p>
             <p><strong>Stopped Date:</strong> ${habit.stoppedDate}</p>
-            <p><strong>Days Since Stopped:</strong> ${daysPassed} days</p>
+            <p><strong>Days Since Stopped:</strong> ${daysPassed} ${daysLabel}</p>
         `;
         habitsList.appendChild(habitElement);
     }

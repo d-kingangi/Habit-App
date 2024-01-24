@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Your routes for handling habits will go here...
-const habits = []; // Temporary storage for habits (in-memory)
+const habits = []; 
 
 // Route to add a habit
 app.post('/habits', (req, res) => {
